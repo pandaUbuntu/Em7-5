@@ -5,56 +5,7 @@ namespace ConsoleRPG.Utils
 {
     static class Dictionaries
     {
-        // Dicctionary for random names
-        public static readonly string[] nm1 =
-        {
-            "Acanthuridae", "Achatina", "Achatinoidea", "Acinonyx", "Actinidia", "Aegypius", "Aepyceros", "Ailuropoda",
-            "Ailurus", "Ajaja", "Alcelaphinae", "Alces", "Alligator", "Alopex", "Alouatta", "Ambystoma",
-            "Amphiprioninae", "Anas", "Anguis", "Anisoptera", "Anthozoa", "Apatura", "Apis", "Apodemus", "Aptenodytes",
-            "Arachnocampa", "Arctictis", "Arctocephalinae", "Ardeidae", "Arini", "Arvicola", "Astrochelys", "Atelerix",
-            "Balaenoptera", "Balsenoptera", "Barbus", "Betta", "Bison", "Blattaria", "Bombina", "Bombus", "Bos",
-            "Brachypelma", "Brachyura", "Branta", "Bubalus", "Bubo", "Bufo", "Buteo", "Cacajao", "Caelifera",
-            "Caimaninae", "Callithrix", "Camelus", "Canis", "Canus", "Capra", "Caracal", "Carcharhinus", "Carcharodon",
-            "Caridea", "Castor", "Casuarius", "Caudata", "Cavia", "Cebus", "Cephalopterus", "Ceratophrys",
-            "Ceratotherium", "Cerura", "Cetorhinus", "Cettia", "Chaetodontidae", "Chamaeleonidae", "Chelonioidea",
-            "Chelydridae", "Chilopoda", "Chinchilla", "Chiroptera", "Chlamydosaurus", "Chlamyphorus", "Chlorocebus",
-            "Choeropsis", "Choloepus", "Cichlidae", "Cirripedia", "Civettictis", "Cnidaria", "Coccinellidae",
-            "Coleoptera", "Connochaetes", "Coraciiformes", "Coturnix", "Crocodylus", "Crocuta", "Cryptoprocta", "Cuon",
-            "Cygnus", "Dasyatis", "Dasypodidae", "Dasyurus", "Daubentonia", "Delphinus", "Demospongiae", "Dendrobatidae",
-            "Dendrobranchiata", "Dermaptera", "Desmodontinae", "Dicerorhinus", "Diceros", "Didelphis", "Diomedeidae",
-            "Diplopoda", "Diptera", "Dracaena", "Dromaius", "Dugong", "Dynastes", "Echinoidea", "Electrophorus",
-            "Elephantulus", "Elephas", "Eleutherodactylus", "Emydidae", "Enhydra", "Ephemeroptera", "Equus", "Erethizon",
-            "Erithacus", "Erythrocebus", "Esox", "Eudyptes", "Eudyptula", "Euptilotis", "Falconiforme", "Felis",
-            "Formicidae", "Fratercula", "Fregata", "Funambulus", "Galeocerdo", "Gallinula", "Gallus", "Gavia",
-            "Gavialis", "Gekkonidae", "Geochelone", "Gerbillinae", "Gerridae", "Ginglymostoma", "Giraffa", "Gliridae",
-            "Gopherus", "Gorilla", "Gruidae", "Gulo", "Gynnidomorpha", "Halichoerus", "Helarctos", "Heleioporus",
-            "Heloderma", "Helogale", "Hemigalus", "Heterodontus", "Hieraatus", "Hippocampus", "Hippopotamus",
-            "Holothuroidea", "Homo", "Hydrochoerus", "Hydrodamalis", "Hydrurga", "Hyla", "Hylobatidae", "Hymenoptera",
-            "Iguana", "Indri", "Insecta", "Isoptera", "Labridae", "Lacerta", "Lacertilia", "Lagenorhynchus", "Lagothrix",
-            "Lama", "Larva", "Latrodectus", "Lemmus", "Lemur", "Leontopithecus", "Leopardus", "Lepisosteidae",
-            "Leptailurus", "Lepus", "Limulidae", "Lissotriton", "Litoria", "Lopholithodes", "Loxodonta", "Lucanidae",
-            "Luscinia", "Lutra", "Lycaon", "Lynx", "Macaca", "Macropus", "Mammuthus", "Mandrillus", "Manta",
-            "Megadyptes", "Megaptera", "Meleagris", "Melopsittacus", "Mephitis", "Merops", "Mesobatrachia",
-            "Mesocricetus", "Metynnis", "Microcebus", "Mirounga", "Moloch", "Muraenidae", "Mustela", "Myrmecobius",
-            "Myrmecophaga", "Nandinia", "Nasalis", "Nasua", "Nectophryne", "Neofelis", "Nephropidae", "Numididae",
-            "Nyctereutes", "Ochotona", "Octopus", "Odobenus", "Odocoileus", "Okapia", "Oniscidea", "Ophisaurus",
-            "Orcinus", "Oriolus", "Ornithorhynchus", "Oryctolagus", "Osteolaemus", "Ostreidae", "Otariidae", "Ovis",
-            "Paguma", "Paguroidea", "Pan", "Panthera", "Papilionoidea", "Papio", "Paracheirodon", "Paradisaeidae",
-            "Paradoxurus", "Paralichthys", "Passeridae", "Pavo", "Pecari", "Pelecanus", "Pelophylax", "Perameles",
-            "Phacochoerus", "Phaethon", "Phalanger", "Phalangeriforme", "Pharomachrus", "Phascolarctos", "Phasianus",
-            "Phasmatodea", "Phoca", "Phoenicopterus", "Phycodurus", "Physeter", "Physignathus", "Pica", "Picidae",
-            "Platanistoidea", "Poecilia", "Pogona", "Pomacanthidae", "Pongo", "Prionailurus", "Pristella", "Procavia",
-            "Procyon", "Proteus", "Protoreaster", "Pseudoryx", "Psittacine", "Pterois", "Pteromyini", "Pygocentrus",
-            "Pygoscelis", "Ramphastos", "Rana", "Rangifer", "Raphus", "Rattus", "Recurvirostra", "Rhincodon",
-            "Rhinoceros", "Rhinocerotidae", "Rhinoderma", "Rupicapra", "Saguinus", "Saimiri", "Sarcophilus", "Sciuridae",
-            "Scorpaenidae", "Scorpiones", "Sepiida", "Serpentes", "Setonix", "Siluriformes", "Simia", "Smilodon",
-            "Spermophilus", "Spheniscus", "Sphenodon", "Sphyraena", "Sphyrna", "Squalus", "Stegostoma", "Strigops",
-            "Strix", "Struthio", "Sula", "Suricata", "Sus", "Symphysodon", "Syncerus", "Tachyglossus", "Talpidae",
-            "Tamias", "Tapirus", "Tarsius", "Taxidea", "Tetraodontidae", "Tetraoninae", "Teuthida", "Threskiornithidae",
-            "Thylogale", "Tragelaphus", "Tremarctos", "Trichechus", "Tridacna", "Trochilidae", "Troglodytes", "Tursiops",
-            "Tyto", "Urochordata", "Uroplatus", "Ursidae", "Ursus", "Varanus", "Vespa", "Viverra", "Vombatus", "Vulpes",
-            "Xenopus"
-        };
+        // new comment
         public static readonly string[] nm2 =
         {
             "abelii", "acanthias", "aculeatus", "acutorostrata", "adeliae", "aegagrus", "afra", "africana", "africanus",
