@@ -1,8 +1,8 @@
 ﻿namespace ConsoleRPG.Utils
 {
-    static class Resources
+    static class PituresData
     {
-        public static readonly string[][] phenix_anim = {
+        public static readonly phenix_anim = {
             new string[] {
                 "               /",
                 "  \\\\\\' ,      / //",
