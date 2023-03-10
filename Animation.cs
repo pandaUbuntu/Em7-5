@@ -1,8 +1,4 @@
-﻿using System.Threading.Tasks;
-
-using static ConsoleRPG.Utils.InputOutput;
-
-namespace ConsoleRPG.Utils
+﻿namespace ConsoleRPG.Utils
 {
     internal class Animation
     {
@@ -23,7 +19,7 @@ namespace ConsoleRPG.Utils
             return frame;
         }
 
-        public async void DrawAnimation(int delay = 100, int x = 0, int y = 0)
+        public async void DrawAnimation(int delay = 289, int x = 0, int y = 0)
         {
             await Task.Run(async () =>
             {
